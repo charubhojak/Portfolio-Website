@@ -1,0 +1,310 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color:rgb(17,21,54);
+    color:white;
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+}
+
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:rgb(66,203,245);
+    text-shadow:
+    0 0 5px rgb(66,203,245),
+    0 0 10px rgb(66,203,245);
+}
+
+.nav-links{
+    display:flex;
+    gap:35px;
+
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+
+}
+
+.nav-links a:hover{
+    color:rgb(66,203,245);
+
+}
+
+
+/* Hero Section */
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+    padding:20px 8%;
+}
+
+.profile img{
+    height:320px;
+    width:250px;
+    object-fit:cover;
+    border-radius:50%;
+    border:2px solid rgb(66,203,245);
+    box-shadow:
+    0 0 15px rgb(66,203,245),
+    0 0 40px rgb(66,203,245);
+}
+
+.intro{
+    max-width:600px;
+}
+
+.hello{
+    color:rgb(66,203,245);
+    font-size:22px;
+}
+
+.intro h1{
+    font-size:45px;
+}
+
+.intro h1 span,
+.intro h2 span{
+    color:rgb(66,203,245);
+}
+
+.intro p{
+    margin-top:20px;
+    line-height:1.8;
+    color:#d7d7d7;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 30px;
+    background-color:rgb(17,21,54);
+    color:rgb(66,203,245);
+    border:1px solid rgb(66,203,245);
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:rgb(66,203,245);
+    color:rgb(17,21,54);
+    box-shadow:
+    0 0 10px rgb(66,203,245),
+    0 0 20px rgb(66,203,245);
+}
+
+
+/* Common Sections */
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.section-title::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background-color:rgb(66,203,245);
+    margin:12px auto;
+    border-radius:10px;
+}
+
+
+/* Cards */
+.card,
+.skill-card,
+.project-card{
+    background-color:rgb(26,30,67);
+    border:1px solid rgb(66,203,245);
+    border-radius:15px;
+    padding:25px;
+    margin:30px auto;
+    max-width:850px;
+    transition:.3s;
+}
+
+.card:hover,
+.skill-card:hover,
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:
+    0 0 10px rgb(66,203,245),
+    0 0 30px rgb(66,203,245);
+}
+
+.card h2{
+
+    color:rgb(66,203,245);
+
+}
+
+.card p{
+
+    margin-top:10px;
+
+}
+
+.card span{
+    display: block;
+    margin-top: 10px;
+    color:rgb(66,203,245);
+
+}
+
+
+/* Skills */
+.skills-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.skill-card{
+    width:220px;
+    text-align:center;
+    margin:0;
+}
+
+.skill-card h3{
+    color:rgb(66,203,245);
+    margin-bottom:15px;
+}
+
+.skill-card p{
+    line-height:1.8;
+}
+
+
+/* Project */
+.project-card{
+    text-align:center;
+}
+
+.project-card img{
+    width:250px;
+    height:150px;
+    object-fit:cover;
+    border:1px solid rgb(66,203,245);
+    border-radius:5px;
+}
+
+.project-card h3{
+    margin:20px 0;
+    color:rgb(66,203,245);
+}
+
+.project-card p{
+    line-height:1.7;
+}
+
+.project-card button{
+    padding:6px 15px;
+    margin:10px 5px;
+}
+
+#live-btn  {
+    text-decoration: none;
+    color: rgb(66,203,245);
+}
+
+#live-btn:hover{
+    background-color:rgb(66,203,245);
+    color:rgb(17,21,54);
+    box-shadow:0 0 10px rgb(66,203,245),0 0 20px rgb(66,203,245);
+}
+
+
+/* Contact */
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    max-width:500px;
+    padding:12px;
+    background-color:rgb(17,21,54);
+    color:white;
+    border:2px solid rgb(66,203,245);
+    border-radius:5px;
+}
+
+textarea{
+    height:130px;
+}
+
+input::placeholder,
+textarea::placeholder{
+    color:white;
+}
+
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid rgb(66,203,245);
+    color:white;
+}
+
+
+/* Responsive */
+@media(max-width:768px){
+.navbar{
+    flex-direction:column;
+    gap:20px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.intro h1{
+    font-size:35px;
+}
+
+.profile img{
+    height:250px;
+    width:220px;
+}
+
+
+}
