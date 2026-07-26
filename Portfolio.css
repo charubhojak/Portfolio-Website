@@ -21,11 +21,11 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 8%;
+    padding:30px 8%;
 }
 
 .logo{
-    font-size:28px;
+    font-size: 30px;
     font-weight:700;
     color:rgb(66,203,245);
     text-shadow:
@@ -35,14 +35,14 @@ body{
 
 .nav-links{
     display:flex;
-    gap:35px;
+    gap: 50px;
 
 }
 
 .nav-links a{
     color:white;
     text-decoration:none;
-    font-size:16px;
+    font-size: 22px;
 
 }
 
@@ -58,12 +58,12 @@ body{
     justify-content:center;
     align-items:center;
     gap:80px;
-    padding:20px 8%;
+    padding: 40px 8%;
 }
 
 .profile img{
-    height:320px;
-    width:250px;
+    height: 575px;
+    width: 450px;
     object-fit:cover;
     border-radius:50%;
     border:2px solid rgb(66,203,245);
@@ -73,16 +73,21 @@ body{
 }
 
 .intro{
-    max-width:600px;
+    max-width:700px;
+    height: 500px;
 }
 
-.hello{
+#hello{
     color:rgb(66,203,245);
-    font-size:22px;
+    font-size: 32px;
 }
 
 .intro h1{
-    font-size:45px;
+    font-size: 60px;
+}
+
+.intro h2{
+    font-size: 35px;
 }
 
 .intro h1 span,
@@ -91,18 +96,20 @@ body{
 }
 
 .intro p{
+    font-size: 22px;
     margin-top:20px;
     line-height:1.8;
     color:#d7d7d7;
 }
 
 button{
+    font-size: 20px;
     margin-top:20px;
-    padding:12px 30px;
+    padding:20px 37px;
     background-color:rgb(17,21,54);
     color:rgb(66,203,245);
     border:1px solid rgb(66,203,245);
-    border-radius:5px;
+    border-radius:10px;
     cursor:pointer;
 }
 
@@ -136,18 +143,43 @@ section{
     border-radius:10px;
 }
 
-
-/* Cards */
-.card,
-.skill-card,
-.project-card{
+.about-card {
+    font-size: 22px;
+    height: 300px;
+    width: 950px;
     background-color:rgb(26,30,67);
     border:1px solid rgb(66,203,245);
     border-radius:15px;
     padding:25px;
     margin:30px auto;
-    max-width:850px;
     transition:.3s;
+
+}
+
+.about-card h2 {
+    color:rgb(66,203,245);
+}
+
+.about-card:hover {
+    transform:translateY(-8px);
+    box-shadow:
+    0 0 10px rgb(66,203,245),
+    0 0 30px rgb(66,203,245);
+}
+
+
+/* Cards */
+.card
+
+{
+    background-color:rgb(26,30,67);
+    border:1px solid rgb(66,203,245);
+    border-radius:15px;
+    padding:25px;
+    margin:30px auto;
+    transition:.3s;
+    width: 950px;
+    height: 200px;
 }
 
 .card:hover,
@@ -166,8 +198,8 @@ section{
 }
 
 .card p{
-
     margin-top:10px;
+    font-size: 22px;
 
 }
 
@@ -175,6 +207,7 @@ section{
     display: block;
     margin-top: 10px;
     color:rgb(66,203,245);
+    font-size: 22px;
 
 }
 
@@ -184,18 +217,27 @@ section{
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
-    gap:25px;
+    gap: 90px;
 }
 
 .skill-card{
-    width:220px;
+    background-color:rgb(26,30,67);
+    border:1px solid rgb(66,203,245);
+    border-radius:25px;
+    padding:25px;
+    margin:30px auto;
+    transition:.3s;
+    width: 350px;
+    height: 220px;
+    font-size: 22px;
     text-align:center;
     margin:0;
 }
 
-.skill-card h3{
+.skill-card h2{
     color:rgb(66,203,245);
     margin-bottom:15px;
+    
 }
 
 .skill-card p{
@@ -205,12 +247,20 @@ section{
 
 /* Project */
 .project-card{
+    background-color:rgb(26,30,67);
+    border:1px solid rgb(66,203,245);
+    border-radius:15px;
+    padding:25px;
+    margin:30px auto;
+    transition:.3s;
+    width: 675px;
+    height: 500px;
     text-align:center;
 }
 
 .project-card img{
-    width:250px;
-    height:150px;
+    width: 300px;
+    height: 200px;
     object-fit:cover;
     border:1px solid rgb(66,203,245);
     border-radius:5px;
@@ -252,13 +302,21 @@ section{
 
 .contact-form input,
 .contact-form textarea{
-    width:100%;
-    max-width:500px;
+    width: 675px;
+    font-size: 22px;
     padding:12px;
     background-color:rgb(17,21,54);
     color:white;
     border:2px solid rgb(66,203,245);
     border-radius:5px;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover{
+    transform:translateY(-8px);
+    box-shadow:
+    0 0 10px rgb(66,203,245),
+    0 0 30px rgb(66,203,245);
 }
 
 textarea{
